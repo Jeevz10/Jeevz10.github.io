@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import headerPic from '../images/jeevan_brooklyn_bridge.jpg';
 
-export default class header extends Component {
+class header extends Component {
     render() {
         return (
             <div>
@@ -10,3 +10,5 @@ export default class header extends Component {
         )
     }
 }
+
+export default header;
