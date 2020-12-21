@@ -1,31 +1,37 @@
 import React, { Component } from 'react';
-import headerDiv from './components/header';
-import headerPic from './images/jeevan_brooklyn_bridge.jpg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          {/* <img src={logo} className="App-logo" alt="logo" /> */}
-          <img src={headerPic} alt="headerpic" />
-          <headerDiv/>
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <>
+        <Router>
+          <Navbar />
+          <Switch>
+            <Route path='/' exact />
+          </Switch>
+        </Router>
+      </>
+     
     );
   }
 }
 
+
+// function App() {
+//   return (
+//     <>
+//       <Router>
+//         <navbar />
+//         <Switch>
+//           <Route path='/' exact />
+
+//         </Switch>
+
+//       </Router>
+//     </>
+//   )
+// }
 export default App;
