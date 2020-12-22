@@ -17,7 +17,7 @@ class App extends Component {
   }
 }
 
-// class App extends Component {
+// class PreviousApp extends Component {
 //   render() {
 //     return (
 //       <>

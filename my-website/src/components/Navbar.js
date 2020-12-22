@@ -131,18 +131,18 @@ function Navbar() {
 
 // before i watched the video 
 
-function previousNavbar() {
-    return (
-        <div>
-            <nav className="navbar">
-                <div className="navbar-container">
-                    <Link to="/" className="navbar-logo">
-                    Jeevan <i class="fas fa-portrait"/>
-                    </Link>
-                </div>
-            </nav>
-        </div>
-    )
-}
+// function previousNavbar() {
+//     return (
+//         <div>
+//             <nav className="navbar">
+//                 <div className="navbar-container">
+//                     <Link to="/" className="navbar-logo">
+//                     Jeevan <i class="fas fa-portrait"/>
+//                     </Link>
+//                 </div>
+//             </nav>
+//         </div>
+//     )
+// }
 
 export default Navbar
