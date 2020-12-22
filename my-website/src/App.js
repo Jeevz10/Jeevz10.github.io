@@ -5,12 +5,14 @@ import './App.css';
 import Navbar from './components/Navbar';
 import styled from 'styled-components';
 import GlobalStyle from './globalStyles';
+import Hero from './components/Hero';
 class App extends Component {
   render() {
     return (
       <>
       <GlobalStyle />
        <Navbar />
+       <Hero />
       </>
      
     );
