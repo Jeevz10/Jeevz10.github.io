@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled, {css} from 'styled-components/macro';
 import { menuData } from '../data/MenuData';
 import { Button } from './Button';
+import { FaBars } from 'react-icons/fa';
 
 // class Navbar extends Component {
 
@@ -52,12 +53,50 @@ const Logo = styled(Link)`
     font-style: italic;
 `;
 
-const MenuBars = styled.i``;
+const MenuBars = styled(FaBars)`
+    display: none;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        background-image: url(${FaBars});
+        background-size: contain;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-50%, 25%)
+    }
+
+`;
+
+// const MenuBarsAlternate = styled.i`
+//     display: none;
+
+//     @media screen and (max-width: 768px) {
+//         display: block;
+//         actual link where the svg image is stored in this directory 
+//         background-image: url(${Bars});
+//         background-size: contain;
+//         height: 40px;
+//         width: 40px;
+//         cursor: pointer;
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         transform: translate(-50%, 25%)
+//     }
+// `;
 
 const NavMenu = styled.div`
     display: flex;
     align-items: center;
     margin-right: -48px;
+
+    @media screen and (max-width:768px) {
+        display: none;
+    }
 `;
 
 const NavMenuLinks = styled(Link)`
