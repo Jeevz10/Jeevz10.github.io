@@ -6,13 +6,14 @@ import Navbar from './components/Navbar';
 import styled from 'styled-components';
 import GlobalStyle from './globalStyles';
 import Hero from './components/Hero';
+import { SliderData } from './data/SliderData';
 class App extends Component {
   render() {
     return (
       <>
       <GlobalStyle />
        <Navbar />
-       <Hero />
+       <Hero slides={SliderData} />
       </>
      
     );
