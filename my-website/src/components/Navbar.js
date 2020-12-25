@@ -35,7 +35,7 @@ const Nav = styled.nav`
     z-index: 100;
     position: fixed;
     width: 100%;
-    background: red;
+    /* background: red; (after you settle the cover page photo, then you remove background)*/
 `;
 
 const NavLink = css`

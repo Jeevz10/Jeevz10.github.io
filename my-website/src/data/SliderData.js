@@ -5,6 +5,7 @@ export const SliderData = [
         title: 'Work Experience',
         path: '/work',
         image: firstPhoto,
+        alt: 'skyline',
     },
     // {
     //     title: 'Project Experience',
