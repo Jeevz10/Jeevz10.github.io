@@ -109,7 +109,7 @@ const NavBtn = styled.div`
     margin-right: 24px;
 `;
 
-function Navbar() {
+function Navbar({toggle}) {
     return (
         <Nav>
             <Logo to="/"> Jeevan </Logo>

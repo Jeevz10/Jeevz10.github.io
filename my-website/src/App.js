@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import logo from './logo.svg';
 import './App.css';
@@ -7,18 +7,20 @@ import styled from 'styled-components';
 import GlobalStyle from './globalStyles';
 import Hero from './components/Hero';
 import { SliderData } from './data/SliderData';
-class App extends Component {
-  render() {
-    return (
-      <>
-      <GlobalStyle />
-       <Navbar />
-       <Hero slides={SliderData} />
-      </>
+import Dropdown from './components/Dropdown';
+// class App extends Component {
+//   render() {
+//     return (
+//       <>
+//       <GlobalStyle />
+//        <Navbar />
+//        <Dropdown />
+//        <Hero slides={SliderData} />
+//       </>
      
-    );
-  }
-}
+//     );
+//   }
+// }
 
 // class PreviousApp extends Component {
 //   render() {
@@ -37,18 +39,20 @@ class App extends Component {
 // }
 
 
-// function App() {
-//   return (
-//     <>
-//       <Router>
-//         <navbar />
-//         <Switch>
-//           <Route path='/' exact />
+function App() {
 
-//         </Switch>
+  const [isOpen, setIsOpen] = useState(false);
 
-//       </Router>
-//     </>
-//   )
-// }
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  }
+  return (
+    <>
+      <GlobalStyle />
+      <Navbar toggle={toggle}/>
+      <Dropdown isOpen={isOpen} toggle={toggle}/>
+      <Hero slides={SliderData} />
+    </>
+  )
+}
 export default App;
