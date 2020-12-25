@@ -10,7 +10,7 @@ const HeroSection = styled.section`
 `;
 
 const HeroWrapper = styled.div`
-    width:100%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -27,19 +27,19 @@ const Hero = ({ slides }) => {
     return (
         <HeroSection >
             <HeroWrapper>
-                {slides.map((slide, index) => {
+                {/* {slides.map((slide, index) => {
                     return (
                         <HeroSlide key={index}>
                             <HeroSlider>
                                 <HeroImage>
                                     <HeroContent>
-                                        
+                                        <h1> {slide.title}</h1>
                                     </HeroContent>
                                 </HeroImage>
                             </HeroSlider>
                         </HeroSlide>
                     )
-                })}
+                })} */}
             </HeroWrapper>
         </HeroSection>
     );
