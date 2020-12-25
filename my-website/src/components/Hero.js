@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { FaSlideshare } from 'react-icons/fa';
 import styled, { css } from 'styled-components/macro';
 import { Button } from './Button';
@@ -128,12 +128,50 @@ ${arrowButtons}
 `;
 
 const Hero = ({ slides }) => {
+    const [current, setCurrent] = useState(0);
+    const length = slides.length;
+    const timeout = useRef(null);
+
+    /* animated effect */
+    useEffect(() => {
+        const nextSlide = () => {
+            setCurrent(current => (current === length - 1 ? 0 : current + 1))
+        };
+
+        timeout.current = setTimeout(nextSlide, 1000);
+        return () => {
+            if (timeout.current) {
+                clearTimeout(timeout.current);
+            }
+        }
+    }, [current, length])
+    const nextSlide = () => {
+        if (timeout.current) {
+            clearTimeout(timeout.current);
+        }
+        setCurrent(current === length - 1 ? 0 : current + 1);
+        console.log(current);
+    }
+
+    const prevSlide = () => {
+        if (timeout.current) {
+            clearTimeout(timeout.current);
+        }
+        setCurrent(current === 0 ? length - 1 : current - 1);
+        console.log(current);
+    }
+
+    if(!Array.isArray(slides) || slides.length <= 0) {
+        return null;
+    }
+
     return (
         <HeroSection >
             <HeroWrapper>
                 {slides.map((slide, index) => {
                     return (
                         <HeroSlide key={index}>
+                        {index === current && (
                             <HeroSlider>
                                 <HeroImage src={slide.image} alt={slide.alt} />
                                 <HeroContent>
@@ -149,12 +187,13 @@ const Hero = ({ slides }) => {
                                     </Button>
                                 </HeroContent>
                             </HeroSlider>
+                        )}
                         </HeroSlide>
                     )
                 })}
                 <SliderButtons>
-                    <PrevArrow />
-                    <NextArrow />
+                    <PrevArrow onClick={prevSlide} />
+                    <NextArrow onClick={nextSlide}/>
                 </SliderButtons>
             </HeroWrapper>
         </HeroSection>
