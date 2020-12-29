@@ -1,17 +1,17 @@
 import React from 'react'
 import { SideBarContainer, Icon, CloseIcon, SideBarWrapper, SideBarMenu, SideBarLink, SideBtnWrap, SideBarRoute } from './SideBarElements';
 
-const index = ({ options }) => {
+const index = ({ options, isOpen, toggle }) => {
     return (
-        <SideBarContainer>
-            <Icon>
+        <SideBarContainer isOpen={isOpen} onClick={toggle}>
+            <Icon onClick={toggle}>
                 <CloseIcon />
             </Icon>
             <SideBarWrapper>
                 <SideBarMenu>
                     {options.map((option, index) => {
                         return (
-                            <SideBarLink key={index} to={option.path}> {option.title} </SideBarLink>
+                            <SideBarLink key={index} to={option.path} onClick={toggle} > {option.title}</SideBarLink>
                         )
                     })}
                     {/* <SideBarLink to='profile'> profile   </SideBarLink >
