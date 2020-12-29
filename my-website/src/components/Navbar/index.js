@@ -3,7 +3,7 @@ import React from 'react';
 import { FaBars } from 'react-icons/fa';
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavbarElements';
 
-const Navbar = () => {
+const Navbar = ({ headers }) => {
     return (
         <>
             <Nav>
@@ -13,23 +13,13 @@ const Navbar = () => {
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
-
-                        <NavItem>
-                            <NavLinks to='Profile'>Profile</NavLinks>
-                        </NavItem>
-
-                        <NavItem>
-                            <NavLinks to='Skillsets'>Skillsets</NavLinks>
-                        </NavItem>
-
-                        <NavItem>
-                            <NavLinks to='Work Experience'>Work Experience</NavLinks>
-                        </NavItem>
-
-                        <NavItem>
-                            <NavLinks to='Projects'>Projects</NavLinks>
-                        </NavItem>
-
+                        {headers.map((header, index) => {
+                            return (
+                                <NavItem key={index}>
+                                    <NavLinks to={header.path}> {header.title} </NavLinks>
+                                </NavItem>
+                            )
+                        })}
                     </NavMenu>
 
                     <NavBtn>

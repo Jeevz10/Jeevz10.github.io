@@ -1,7 +1,7 @@
 import React from 'react'
 import { SideBarContainer, Icon, CloseIcon, SideBarWrapper, SideBarMenu, SideBarLink, SideBtnWrap, SideBarRoute } from './SideBarElements';
 
-const index = () => {
+const index = ({ options }) => {
     return (
         <SideBarContainer>
             <Icon>
@@ -9,10 +9,15 @@ const index = () => {
             </Icon>
             <SideBarWrapper>
                 <SideBarMenu>
-                    <SideBarLink to='profile'> profile   </SideBarLink >
+                    {options.map((option, index) => {
+                        return (
+                            <SideBarLink key={index} to={option.path}> {option.title} </SideBarLink>
+                        )
+                    })}
+                    {/* <SideBarLink to='profile'> profile   </SideBarLink >
                     <SideBarLink to='skillets'> skillets   </SideBarLink >
                     <SideBarLink to='work experience'> work experience   </SideBarLink >
-                    <SideBarLink to='projects'> projects   </SideBarLink >
+                    <SideBarLink to='projects'> projects   </SideBarLink > */}
                 </SideBarMenu>
 
                 <SideBtnWrap>
