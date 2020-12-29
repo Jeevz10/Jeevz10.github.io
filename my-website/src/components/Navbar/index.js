@@ -8,6 +8,7 @@ const Navbar = ({ headers }) => {
         <>
             <Nav>
                 <NavbarContainer>
+                    {/* TODO */}
                     <NavLogo to='/'> Dolla </NavLogo>
                     <MobileIcon>
                         <FaBars />
@@ -21,7 +22,7 @@ const Navbar = ({ headers }) => {
                             )
                         })}
                     </NavMenu>
-
+                    {/* TODO */}
                     <NavBtn>
                         <NavBtnLink to='/signin'> Sign In </NavBtnLink>
                     </NavBtn>

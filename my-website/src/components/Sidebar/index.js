@@ -19,7 +19,7 @@ const index = ({ options }) => {
                     <SideBarLink to='work experience'> work experience   </SideBarLink >
                     <SideBarLink to='projects'> projects   </SideBarLink > */}
                 </SideBarMenu>
-
+                {/* // TODO  */}
                 <SideBtnWrap>
                     <SideBarRoute to='/signin'>  Sign In </SideBarRoute>
                 </SideBtnWrap>
