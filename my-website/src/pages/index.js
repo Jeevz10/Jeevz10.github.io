@@ -3,6 +3,7 @@ import { Data } from '../data/Data';
 import SideBar from '../components/Sidebar';
 import NavBar from '../components/Navbar';
 import SliderSection from '../components/SliderSection';
+import InfoSection from '../components/InfoSection';
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
             <SideBar options={Data} isOpen={isOpen} toggle={toggle}/>
             <NavBar headers={Data} toggle={toggle}/>
             <SliderSection />
+            <InfoSection />
         </>
     )
 }
