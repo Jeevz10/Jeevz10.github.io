@@ -40,7 +40,7 @@ export const VideoBg = styled.video`
     width: 100%;
     height: 100%;
     /* -o-object-fit: cover; */
-    object-fit: cover;
+    object-fit: cover; // scale down will be bad because it stretches the video badly for small pixel size. fill and contain will leave empty spaces so its bad
     background: #232a34;
 `;
 
