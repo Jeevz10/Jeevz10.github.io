@@ -24,7 +24,7 @@ const Navbar = ({ headers, toggle }) => {
                     </NavMenu>
                     {/* TODO  I was thinking this to be a contact me button */}
                     {/* <NavBtn>
-                        <NavBtnLink to='/signin'> Sign In </NavBtnLink>
+                        <NavBtnLink to='/signin'> Contact Me </NavBtnLink>
                     </NavBtn> */}
                 </NavbarContainer>
             </Nav>
