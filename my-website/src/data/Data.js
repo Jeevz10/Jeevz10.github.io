@@ -1,4 +1,4 @@
-export const Data = [
+export const Routes = [
     {
         title: 'Profile',
         path: '/profile',    

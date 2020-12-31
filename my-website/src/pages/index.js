@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Data, homeObjOne } from '../data/Data';
+import { Routes, homeObjOne } from '../data/Data';
 import SideBar from '../components/Sidebar';
 import NavBar from '../components/Navbar';
 import CoverSection from '../components/CoverSection';
@@ -15,8 +15,8 @@ const Home = () => {
 
     return (
         <>
-            <SideBar options={Data} isOpen={isOpen} toggle={toggle}/>
-            <NavBar headers={Data} toggle={toggle}/>
+            <SideBar options={Routes} isOpen={isOpen} toggle={toggle}/>
+            <NavBar headers={Routes} toggle={toggle}/>
             <CoverSection />
             <InfoSection {...homeObjOne} />
         </>
