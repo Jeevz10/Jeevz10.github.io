@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Routes, homeObjOne } from '../data/Data';
+import { homeObjOne, Routes, CoverSectionData } from '../data/Data';
 import SideBar from '../components/Sidebar';
 import NavBar from '../components/Navbar';
 import CoverSection from '../components/CoverSection';

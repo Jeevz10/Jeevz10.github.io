@@ -8,8 +8,8 @@ const Navbar = ({ headers, toggle }) => {
         <>
             <Nav>
                 <NavbarContainer>
-                    {/* TODO */}
-                    <NavLogo to='/'> Dolla </NavLogo>
+                    {/* TODO I didnt see a need for logo but an idea was to insert a jeevan gif*/}
+                    {/* <NavLogo to='/'> Jeev </NavLogo> */}
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
@@ -22,10 +22,10 @@ const Navbar = ({ headers, toggle }) => {
                             )
                         })}
                     </NavMenu>
-                    {/* TODO */}
-                    <NavBtn>
+                    {/* TODO  I was thinking this to be a contact me button */}
+                    {/* <NavBtn>
                         <NavBtnLink to='/signin'> Sign In </NavBtnLink>
-                    </NavBtn>
+                    </NavBtn> */}
                 </NavbarContainer>
             </Nav>
         </>
