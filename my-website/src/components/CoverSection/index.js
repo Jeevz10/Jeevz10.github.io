@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import { SliderContainer, SliderBg, VideoBg, SliderContent, SliderH1, SliderP, SliderBtnWrapper, ArrowForward, ArrowRight } from './SliderElements';
+import { CoverContainer, CoverBg, VideoBg, CoverContent, CoverH1, CoverP, CoverBtnWrapper, ArrowForward, ArrowRight } from './CoverElements';
 import Video from '../../videos/video.mp4';
 import { Button } from '../ButtonElement';
 
 // TODO Rename this if need be 
-const SliderSection = () => {
+const CoverSection = () => {
 
     const [hover, setHover] = useState(false);
 
@@ -13,24 +13,24 @@ const SliderSection = () => {
     }
 
     return (
-        <SliderContainer>
-            <SliderBg>
+        <CoverContainer>
+            <CoverBg>
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
-            </SliderBg>
-            <SliderContent>
+            </CoverBg>
+            <CoverContent>
                 {/* TODO Add a profile button, work button, project button or contact me button and a gif that says scroll down! Similar to existing
                 Also, i believe there is a h1 subclass for classes so check doing-with-react-2 out */}
-                <SliderH1> What up!!!! </SliderH1>
+                <CoverH1> What up!!!! </CoverH1>
 
-                <SliderBtnWrapper>
+                <CoverBtnWrapper>
                     {/* Try and remove primary and dark to see the difference  */}
                     <Button to='/profile' onMouseEnter={onHover}  onMouseLeave={onHover} primary='true' dark='true'>
                         Let's Go! {hover ? <ArrowForward /> : <ArrowRight/>}
                     </Button>
-                </SliderBtnWrapper>
-            </SliderContent>
-        </SliderContainer>
+                </CoverBtnWrapper>
+            </CoverContent>
+        </CoverContainer>
     )
 }
 
-export default SliderSection;
+export default CoverSection;

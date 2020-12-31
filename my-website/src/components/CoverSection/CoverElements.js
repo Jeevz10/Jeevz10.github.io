@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
 
-export const SliderContainer = styled.div`
+export const CoverContainer = styled.div`
     background: #0c0c0c;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 800px;
+    height: 100vh; // TODO adjust for media size 480 and below 
+    width: 100vw; 
     position: relative;
     z-index: 1;
 
@@ -25,7 +26,7 @@ export const SliderContainer = styled.div`
     }
 `;
 
-export const SliderBg = styled.div`
+export const CoverBg = styled.div`
     position: absolute;
     top: 0;
     right: 0;
@@ -39,12 +40,12 @@ export const SliderBg = styled.div`
 export const VideoBg = styled.video`
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
+    /* -o-object-fit: cover; */
     object-fit: cover;
     background: #232a34;
 `;
 
-export const SliderContent = styled.div`
+export const CoverContent = styled.div`
     z-index: 3;
     max-width: 1200px;
     position: absolute;
@@ -54,7 +55,7 @@ export const SliderContent = styled.div`
     align-items: center;
 `;
 
-export const SliderH1 = styled.h1`
+export const CoverH1 = styled.h1`
     color: #fff;
     font-size: 48px;
     text-align: center;
@@ -68,7 +69,7 @@ export const SliderH1 = styled.h1`
     }
 `;
 
-export const SliderP = styled.p`
+export const CoverP = styled.p`
     margin-top: 24px;
     color: #fff;
     font-size: 24px;
@@ -84,7 +85,7 @@ export const SliderP = styled.p`
     }
 `;
 
-export const SliderBtnWrapper = styled.div`
+export const CoverBtnWrapper = styled.div`
     margin-top: 32px;
     display: flex;
     flex-direction: column;
