@@ -48,6 +48,9 @@ export const CoverContent = styled.div`
     z-index: 3;
     max-width: 1200px;
     position: absolute;
+    left: 24px;
+    height: 25vh;
+    width: 40vw;
     padding: 8px 24px;
     display: flex;
     flex-direction: column;
@@ -57,14 +60,17 @@ export const CoverContent = styled.div`
 export const CoverH1 = styled.h1`
     color: #fff;
     font-size: 48px;
+    font-size: 4vh;
     text-align: center;
-
+    // TODO revist font-size again
     @media screen and (max-width: 768px) {
         font-size: 40px;
+        font-size: 4vw;
     }
 
     @media screen and (max-width: 480px) {
         font-size: 32px;
+        font-size: 4vw;
     }
 `;
 

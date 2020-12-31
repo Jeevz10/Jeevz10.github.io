@@ -19,7 +19,6 @@ export const homeObjOne = {
 
 export const CoverSectionData = {
     title: 'Welcome to Jeevan`s personal page!'
-
 }
 
 

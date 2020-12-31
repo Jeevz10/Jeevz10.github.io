@@ -4,7 +4,7 @@ import Video from '../../videos/video.mp4';
 import { Button } from '../ButtonElement';
 
 // TODO Rename this if need be 
-const CoverSection = () => {
+const CoverSection = ({coverSectionData}) => {
 
     const [hover, setHover] = useState(false);
 
@@ -20,7 +20,7 @@ const CoverSection = () => {
             <CoverContent>
                 {/* TODO Add a profile button, work button, project button or contact me button and a gif that says scroll down! Similar to existing
                 Also, i believe there is a h1 subclass for classes so check doing-with-react-2 out */}
-                <CoverH1> What up!!!! </CoverH1>
+                <CoverH1> {coverSectionData.title} </CoverH1>
 
                 <CoverBtnWrapper>
                     {/* Try and remove primary and dark to see the difference  */}

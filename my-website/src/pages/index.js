@@ -17,7 +17,7 @@ const Home = () => {
         <>
             <SideBar options={Routes} isOpen={isOpen} toggle={toggle}/>
             <NavBar headers={Routes} toggle={toggle}/>
-            <CoverSection />
+            <CoverSection coverSectionData={CoverSectionData}/>
             <InfoSection {...homeObjOne} />
         </>
     )
