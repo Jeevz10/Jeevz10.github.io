@@ -8,7 +8,6 @@ export const CoverContainer = styled.div`
     align-items: center;
     padding: 0 30px;
     height: 100vh; // TODO adjust for media size 480 and below 
-    width: 100vw; 
     position: relative;
     z-index: 1;
 
