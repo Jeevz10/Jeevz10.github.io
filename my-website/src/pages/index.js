@@ -4,6 +4,7 @@ import SideBar from '../components/Sidebar';
 import NavBar from '../components/Navbar';
 import CoverSection from '../components/CoverSection';
 import InfoSection from '../components/InfoSection';
+import ProfileSection from '../components/ProfileSection';
 
 
 const Home = () => {
@@ -18,7 +19,8 @@ const Home = () => {
             <SideBar options={Routes} isOpen={isOpen} toggle={toggle}/>
             <NavBar headers={Routes} toggle={toggle}/>
             <CoverSection coverSectionData={CoverSectionData}/>
-            <InfoSection {...homeObjOne} />
+            {/* <InfoSection {...homeObjOne} /> */}
+            <ProfileSection />
         </>
     )
 }
