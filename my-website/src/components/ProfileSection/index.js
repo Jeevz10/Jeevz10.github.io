@@ -10,7 +10,8 @@ import {
     Img,
     FactsCol,
     FactsList,
-    AboutMeCol
+    AboutMeCol,
+    AboutMeList,
 } from './ProfileElements';
 
 import image from '../../images/jeevan_philly.jpg';
@@ -20,11 +21,14 @@ const ProfileSection = ({img, alt}) => {
         <>
         <ProfileContainer>
             <ProfileWrapper>
-                <Layer1>
+                {/* <Layer1>
                     <SectionHeader>
                         Profile
                     </SectionHeader>
-                </Layer1>
+                </Layer1> */}
+                <SectionHeader>
+                    Profile
+                </SectionHeader>
                 <Layer2>
                     <ImageCol>
                         <ImgWrap>
@@ -33,11 +37,13 @@ const ProfileSection = ({img, alt}) => {
                     </ImageCol>
                     <FactsCol>
                         <FactsList>
-
+                            Facts
                         </FactsList>
                     </FactsCol>
                     <AboutMeCol>
-
+                        <AboutMeList>
+                            About Me 
+                        </AboutMeList>
                     </AboutMeCol>
                 </Layer2>
                 

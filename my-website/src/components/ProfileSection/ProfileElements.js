@@ -8,8 +8,6 @@ export const ProfileContainer = styled.div`
 
 
 export const ProfileWrapper = styled.div`
-    display: grid;
-    grid-auto-rows: auto;
     z-index: 1;
     height: 100%;
     width: 100%;
@@ -23,11 +21,14 @@ export const Layer1 = styled.div`
 `;
 
 export const SectionHeader = styled.h1`
-    font-size: 10vmin; // TODO this is overshooting the div size so you might want to add a restrictive layer
-    
+    font-size: 7.5vmin; // TODO this is overshooting the div size so you might want to add a restrictive layer
+    height: 100px;
+    text-align: center;
 `;
 
 export const Layer2 = styled.div`
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -35,6 +36,8 @@ export const Layer2 = styled.div`
 
 
 export const ImageCol = styled.div`
+    height: 100%;
+    width: 20%;
     margin-bottom: 15px;
     padding: 0 15px;
     align-self: left;
@@ -61,5 +64,9 @@ export const FactsList = styled.ul`
 `;
 
 export const AboutMeCol = styled.div`
+
+`;
+
+export const AboutMeList = styled.div`
 
 `;
