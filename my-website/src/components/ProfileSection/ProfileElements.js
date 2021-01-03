@@ -11,7 +11,7 @@ export const ProfileWrapper = styled.div`
     z-index: 1;
     height: 100%;
     width: 100%;
-    padding: 5% 5%;
+    padding: 2% 2%;
     justify-content: center;
 `;
 
@@ -21,7 +21,7 @@ export const Layer1 = styled.div`
 `;
 
 export const SectionHeader = styled.h1`
-    font-size: 5em; // TODO this is overshooting the div size so you might want to add a restrictive layer
+    font-size: 5em; /* ODO this is overshooting the div size so you might want to add a restrictive layer */
     height: 100px;
     text-align: center;
 `;
@@ -47,17 +47,14 @@ export const ImageCol = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-    max-width: 555px;
     height: 100%;
+    top: 10%;
+    left: 10%;
+    position: relative;
 `;
 
 export const Img = styled.img`
-    /* width: 50%;
-    margin: 0 0 10px 0;
-    padding-right: 0; */
     position: relative;
-    top: 20%;
-    left: 10%;
     max-width: 80%;
     object-fit: fill;
     object-position: center;
@@ -70,7 +67,7 @@ export const FactsCol = styled.div`
 `;
 
 export const FactsWrapper = styled.div`
-    top: 20%;
+    top: 10%;
     position: relative;
 `;
 
@@ -97,7 +94,7 @@ export const AboutMeCol = styled.div`
 
 export const AboutMeWrapper = styled.div`
     position: relative;
-    top: 20%;
+    top: 10%;
 `;
 
 export const AboutMeHeader = styled.h2`
