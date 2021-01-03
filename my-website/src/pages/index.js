@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { homeObjOne, Routes, CoverSectionData } from '../data/Data';
+import { homeObjOne, Routes, CoverSectionData, ProfileFactsData } from '../data/Data';
 import SideBar from '../components/Sidebar';
 import NavBar from '../components/Navbar';
 import CoverSection from '../components/CoverSection';
@@ -20,7 +20,7 @@ const Home = () => {
             <NavBar headers={Routes} toggle={toggle}/>
             <CoverSection coverSectionData={CoverSectionData}/>
             {/* <InfoSection {...homeObjOne} /> */}
-            <ProfileSection />
+            <ProfileSection factsData={ProfileFactsData}/>
         </>
     )
 }

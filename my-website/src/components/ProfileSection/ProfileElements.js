@@ -80,8 +80,12 @@ export const FactsHeader = styled.h2`
     text-align: center;
 `;
 
-export const FactsList = styled.ul`
+export const FactsUlList = styled.ul`
+    list-style-type: none;
+`;
 
+export const FactsList = styled.li`
+    margin-top: 20px;
 `;
 
 export const AboutMeCol = styled.div`

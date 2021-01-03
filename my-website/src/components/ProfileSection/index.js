@@ -11,6 +11,7 @@ import {
     FactsCol,
     FactsWrapper,
     FactsHeader,
+    FactsUlList,
     FactsList,
     AboutMeCol,
     AboutMeWrapper,
@@ -20,7 +21,7 @@ import {
 
 import image from '../../images/jeevan_philly.jpg';
 
-const ProfileSection = ({img, alt}) => {
+const ProfileSection = ({factsData}) => {
     return (
         <>
         <ProfileContainer>
@@ -44,11 +45,24 @@ const ProfileSection = ({img, alt}) => {
                             <FactsHeader>
                                 Facts
                             </FactsHeader>
-                            <FactsList>
-                                Name - Jeevan 
-                                <br/>
-                                Hello
-                            </FactsList>
+                            <FactsUlList>
+                                {factsData.map((facts, index) => {
+                                    return (
+                                        <FactsList key={index}>
+                                            {facts.key} - {facts.value}
+                                        </FactsList>
+                                        
+                                    )
+                                })}
+
+                                {/* {headers.map((header, index) => {
+                            return (
+                                <NavItem key={index}>
+                                    <NavLinks to={header.path}> {header.title} </NavLinks>
+                                </NavItem>
+                            )
+                        })} */}
+                            </FactsUlList>
                         </FactsWrapper>
                     </FactsCol>
                     <AboutMeCol>

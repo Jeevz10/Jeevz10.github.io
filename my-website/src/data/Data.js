@@ -22,6 +22,25 @@ export const CoverSectionData = {
 }
 
 
+export  const ProfileFactsData = [
+    {
+        key: 'Name',
+        value: 'Jeevan NS',
+    },
+    {
+        key: 'Age',
+        value: '24',
+    },
+    {
+        key: 'Residence',
+        value: 'Singapore',
+    },
+    {
+        key: 'Occupation',
+        value: 'Final Year Student at National University of Singapore'
+    }
+]
+
 
 export const Routes = [
     {
