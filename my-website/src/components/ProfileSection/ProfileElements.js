@@ -43,6 +43,7 @@ export const ImageCol = styled.div`
     margin-bottom: 15px;
     padding: 20 15px;
     align-items: center;
+    flex-grow: 1;
 `;
 
 export const ImgWrap = styled.div`
@@ -63,8 +64,20 @@ export const Img = styled.img`
 `;
 
 export const FactsCol = styled.div`
-    height: 20%;
-    width: 20%;
+    height: 700px;
+    width: 300px;
+    flex-grow: 1;
+`;
+
+export const FactsWrapper = styled.div`
+    top: 20%;
+    position: relative;
+`;
+
+export const FactsHeader = styled.h2`
+    font-size: 2em;
+    position: relative;
+    text-align: center;
 `;
 
 export const FactsList = styled.ul`
@@ -72,9 +85,21 @@ export const FactsList = styled.ul`
 `;
 
 export const AboutMeCol = styled.div`
-
+    flex-grow: 3;
+    height: 700px;
+    width: 300px;
 `;
 
-export const AboutMeList = styled.div`
+export const AboutMeWrapper = styled.div`
+    position: relative;
+    top: 20%;
+`;
+
+export const AboutMeHeader = styled.h2`
+    font-size: 2em;
+`;
+
+
+export const AboutMePara = styled.div`
 
 `;

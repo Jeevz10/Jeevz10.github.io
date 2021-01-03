@@ -9,9 +9,13 @@ import {
     ImgWrap,
     Img,
     FactsCol,
+    FactsWrapper,
+    FactsHeader,
     FactsList,
     AboutMeCol,
-    AboutMeList,
+    AboutMeWrapper,
+    AboutMeHeader,
+    AboutMePara,
 } from './ProfileElements';
 
 import image from '../../images/jeevan_philly.jpg';
@@ -36,14 +40,30 @@ const ProfileSection = ({img, alt}) => {
                         </ImgWrap>
                     </ImageCol>
                     <FactsCol>
-                        <FactsList>
-                            Facts
-                        </FactsList>
+                        <FactsWrapper>
+                            <FactsHeader>
+                                Facts
+                            </FactsHeader>
+                            <FactsList>
+                                Name - Jeevan 
+                                <br/>
+                                Hello
+                            </FactsList>
+                        </FactsWrapper>
                     </FactsCol>
                     <AboutMeCol>
-                        <AboutMeList>
-                            About Me 
-                        </AboutMeList>
+                        <AboutMeWrapper>
+                            <AboutMeHeader>
+                                About Me 
+                            </AboutMeHeader>
+                            <AboutMePara>
+                                Hey there! Welcome to my personal webpage! I created this because not only did I want to hone my HTML, CSS and React skill,
+                                I wanted to create a page where anyone could get an idea of who I am by simply exploring this page! 
+
+                             
+                            </AboutMePara>
+                        </AboutMeWrapper>
+                        
                     </AboutMeCol>
                 </Layer2>
                 
