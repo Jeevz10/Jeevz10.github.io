@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const ProfileContainer = styled.div`
     background: #faebd7;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 `;
 
 
