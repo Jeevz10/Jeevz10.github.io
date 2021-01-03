@@ -101,9 +101,11 @@ export const AboutMeWrapper = styled.div`
 
 export const AboutMeHeader = styled.h2`
     font-size: 2em;
+    position: relative;
+    text-align: center;
 `;
 
 
 export const AboutMePara = styled.div`
-
+    margin-top: 10px;
 `;
