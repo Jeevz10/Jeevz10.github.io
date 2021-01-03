@@ -21,26 +21,28 @@ export const Layer1 = styled.div`
 `;
 
 export const SectionHeader = styled.h1`
-    font-size: 7.5vmin; // TODO this is overshooting the div size so you might want to add a restrictive layer
+    font-size: 5em; // TODO this is overshooting the div size so you might want to add a restrictive layer
     height: 100px;
     text-align: center;
 `;
 
 export const Layer2 = styled.div`
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
 `;
 
 
 export const ImageCol = styled.div`
-    height: 100%;
-    width: 20%;
+    height: 700px;
+    width: 300px;
     margin-bottom: 15px;
-    padding: 0 15px;
-    align-self: left;
+    padding: 20 15px;
+    align-items: center;
 `;
 
 export const ImgWrap = styled.div`
@@ -49,9 +51,15 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
-    width: 50%;
+    /* width: 50%;
     margin: 0 0 10px 0;
-    padding-right: 0;
+    padding-right: 0; */
+    position: relative;
+    top: 20%;
+    left: 10%;
+    max-width: 80%;
+    object-fit: fill;
+    object-position: center;
 `;
 
 export const FactsCol = styled.div`
