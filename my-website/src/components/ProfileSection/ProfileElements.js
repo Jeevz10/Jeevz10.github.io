@@ -84,8 +84,9 @@ export const FactsUlList = styled.ul`
     list-style-type: none;
 `;
 
+// https://stackoverflow.com/questions/19254411/how-do-i-set-vertical-space-between-list-items/19254441#:~:text=Add%20a%20margin%20to%20your,text%20within%20the%20li%20tags.
 export const FactsList = styled.li`
-    margin-top: 20px;
+    margin-top: 20px; 
 `;
 
 export const AboutMeCol = styled.div`
