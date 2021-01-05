@@ -21,6 +21,7 @@ import {
 } from './ProfileElements';
 
 import image from '../../images/jeevan_passport.jpg';
+import { Chrono } from 'react-chrono';
 
 const ProfileSection = ({factsData}) => {
     return (
@@ -73,14 +74,23 @@ const ProfileSection = ({factsData}) => {
                         I believe each person has their own story to tell. Why not show you mine?
                     </TimelinePara>
 
-                    <Timeline>
-
-                    </Timeline>
+                    {/* <Timeline>
+                    <Chrono mode="VERTICAL_ALTERNATING" />
+                    </Timeline> */}
+                    <div style={{width: '500px', height: '950px'}}>
+                        <Chrono mode='VERTICAL_ALTERNATING' items={items} />
+                    </div>
                 </TimelineLayer>
             </ProfileWrapper>
         </ProfileContainer>
         </>
     )
 }
+
+const items = [{
+    title: 'Hello',
+    cardTitle: 'hmmm',
+    cardSubtitle: 'yeahhmm'
+}];
 
 export default ProfileSection;
