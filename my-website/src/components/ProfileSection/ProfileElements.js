@@ -72,27 +72,24 @@ export const FactsList = styled.li`
 `;
 
 export const AboutMeLayer = styled.div`
+    margin: auto;
     height: 300px;
-    width: 300px;
+    width: 600px;
 `;
 export const AboutMeCol = styled.div`
-    flex-grow: 3;
-    height: 700px;
-    width: 300px;
-`;
-
-export const AboutMeWrapper = styled.div`
-    position: relative;
-    top: 10%;
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+    text-align: center;
 `;
 
 export const AboutMeHeader = styled.h2`
-    font-size: 2em;
+    font-size: 2rem;
     position: relative;
     text-align: center;
 `;
 
 
 export const AboutMePara = styled.div`
-    margin-top: 10px;
+    margin-top: 20px;
 `;

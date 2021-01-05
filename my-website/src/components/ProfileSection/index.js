@@ -9,11 +9,9 @@ import {
     Img,
     FactsCol,
     FactsWrapper,
-    FactsHeader,
     FactsUlList,
     FactsList,
     AboutMeCol,
-    AboutMeWrapper,
     AboutMeHeader,
     AboutMePara,
 } from './ProfileElements';
@@ -37,6 +35,7 @@ const ProfileSection = ({factsData}) => {
 
                     <FactsCol>
                         <FactsWrapper>
+                            {/* TODO Bold the keys */}
                             <FactsUlList>
                                 {factsData.map((facts, index) => {
                                     return (
@@ -51,74 +50,19 @@ const ProfileSection = ({factsData}) => {
                 </PicAndFactsLayer>
                 <AboutMeLayer>
                     <AboutMeCol>
-                        <AboutMeWrapper>
-                            <AboutMeHeader>
-                                A little something about me...
-                            </AboutMeHeader>
-                            <AboutMePara>
-
-                            </AboutMePara>
-                        </AboutMeWrapper>
+                        {/* TODO settle fonts size*/}
+                        <AboutMeHeader>
+                            A little something about me...
+                        </AboutMeHeader>
+                        <AboutMePara>
+                            Hey there! Firstly, thank you for stumbling upon my website! I created this because not only did I want to 
+                            learn the React Library, I wanted to give people a good idea of who I am before they actually get to know me!
+                        </AboutMePara>
                     </AboutMeCol>
                 </AboutMeLayer>
             </ProfileWrapper>
         </ProfileContainer>
         </>
-
-        // <>
-        // <ProfileContainer>
-        //     <ProfileWrapper>
-        //         {/* <Layer1>
-        //             <SectionHeader>
-        //                 Profile
-        //             </SectionHeader>
-        //         </Layer1> */}
-        //         <SectionHeader>
-        //             Profile
-        //         </SectionHeader>
-        //         <Layer2>
-        //             <ImageCol>
-        //                 <ImgWrap>
-        //                     <Img src={image}  />
-        //                 </ImgWrap>
-        //             </ImageCol>
-        //             <FactsCol>
-        //                 <FactsWrapper>
-        //                     <FactsHeader>
-        //                         Facts
-        //                     </FactsHeader>
-        //                     <FactsUlList>
-        //                         {factsData.map((facts, index) => {
-        //                             return (
-        //                                 <FactsList key={index}>
-        //                                     {facts.key} - {facts.value}
-        //                                 </FactsList>
-                                        
-        //                             )
-        //                         })}
-        //                     </FactsUlList>
-        //                 </FactsWrapper>
-        //             </FactsCol>
-        //             <AboutMeCol>
-        //                 <AboutMeWrapper>
-        //                     <AboutMeHeader>
-        //                         About Me 
-        //                     </AboutMeHeader>
-        //                     <AboutMePara>
-        //                         Hey there! Welcome to my personal webpage! I created this because not only did I want to hone my HTML, CSS and React skill,
-        //                         I wanted to create a page where anyone could get an idea of who I am by simply exploring this page! 
-
-                             
-        //                     </AboutMePara>
-        //                 </AboutMeWrapper>
-                        
-        //             </AboutMeCol>
-        //         </Layer2>
-                
-        //     </ProfileWrapper>
-        // </ProfileContainer>
-
-        // </>
     )
 }
 
