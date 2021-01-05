@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProfileContainer = styled.div`
-    background: #faebd7;
+    background: #FFFFFF;
     height: 100%;
     width: 100%;
 `;
@@ -11,58 +11,43 @@ export const ProfileWrapper = styled.div`
     z-index: 1;
     height: 100%;
     width: 100%;
-    padding: 2% 2%;
+    padding-top: 4rem;
+    padding-bottom: 9rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
     justify-content: center;
 `;
 
-export const Layer1 = styled.div`
-    height: 20%;
-    width: 100%;
-`;
-
 export const SectionHeader = styled.h1`
-    font-size: 5em; /* ODO this is overshooting the div size so you might want to add a restrictive layer */
+    font-size: 3rem; /* ODO this is overshooting the div size so you might want to add a restrictive layer */
     height: 100px;
     text-align: center;
 `;
 
-export const Layer2 = styled.div`
-    /* height: 100%;
-    width: 100%; */
+export const PicAndFactsLayer = styled.div`
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
 `;
 
-
-export const ImageCol = styled.div`
-    height: 700px;
-    width: 300px;
-    margin-bottom: 15px;
-    padding: 20 15px;
-    align-items: center;
-    flex-grow: 1;
-`;
-
-export const ImgWrap = styled.div`
-    height: 100%;
-    top: 10%;
-    left: 10%;
+export const ImgCol = styled.div`
     position: relative;
+    object-fit: cover;
+    height: 300px;
+    width: 400px;
+    text-align: center;
 `;
 
 export const Img = styled.img`
     position: relative;
-    max-width: 80%;
-    object-fit: fill;
-    object-position: center;
+    width: 200px;
 `;
 
 export const FactsCol = styled.div`
-    height: 700px;
-    width: 300px;
+    height: 300px;
+    max-width: 400px;
     flex-grow: 1;
 `;
 
@@ -86,6 +71,10 @@ export const FactsList = styled.li`
     margin-top: 20px; 
 `;
 
+export const AboutMeLayer = styled.div`
+    height: 300px;
+    width: 300px;
+`;
 export const AboutMeCol = styled.div`
     flex-grow: 3;
     height: 700px;
