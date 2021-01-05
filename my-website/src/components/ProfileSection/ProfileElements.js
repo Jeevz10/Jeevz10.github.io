@@ -77,7 +77,6 @@ export const AboutMeLayer = styled.div`
     width: 600px;
 `;
 export const AboutMeCol = styled.div`
-    flex-grow: 1;
     height: 100%;
     width: 100%;
     text-align: center;
@@ -85,11 +84,29 @@ export const AboutMeCol = styled.div`
 
 export const AboutMeHeader = styled.h2`
     font-size: 2rem;
-    position: relative;
-    text-align: center;
 `;
 
 
-export const AboutMePara = styled.div`
+export const AboutMePara = styled.p`
     margin-top: 20px;
+`;
+
+export const TimelineLayer = styled.div`
+    height: 700px;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+`;
+
+export const TimelineHeader = styled.h2`
+    font-size: 2rem;
+`;
+
+export const TimelinePara = styled.p`
+    margin-top: 20px;
+`
+
+export const Timeline = styled.div`
+    height: 100%;
+    width: 100%;
 `;

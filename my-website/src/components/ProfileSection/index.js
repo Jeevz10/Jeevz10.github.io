@@ -14,6 +14,10 @@ import {
     AboutMeCol,
     AboutMeHeader,
     AboutMePara,
+    TimelineLayer,
+    TimelineHeader,
+    Timeline,
+    TimelinePara
 } from './ProfileElements';
 
 import image from '../../images/jeevan_passport.jpg';
@@ -60,6 +64,19 @@ const ProfileSection = ({factsData}) => {
                         </AboutMePara>
                     </AboutMeCol>
                 </AboutMeLayer>
+                <TimelineLayer>
+                    <TimelineHeader>
+                        Timeline
+                    </TimelineHeader>
+
+                    <TimelinePara>
+                        I believe each person has their own story to tell. Why not show you mine?
+                    </TimelinePara>
+
+                    <Timeline>
+
+                    </Timeline>
+                </TimelineLayer>
             </ProfileWrapper>
         </ProfileContainer>
         </>
