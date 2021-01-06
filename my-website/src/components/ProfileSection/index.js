@@ -22,6 +22,7 @@ import {
 
 import image from '../../images/jeevan_passport.jpg';
 import { Chrono } from 'react-chrono';
+import { TimelineData } from '../../data/ProfileSection/TimelineData';
 
 const ProfileSection = ({factsData}) => {
     return (
@@ -77,8 +78,8 @@ const ProfileSection = ({factsData}) => {
                     {/* <Timeline>
                     <Chrono mode="VERTICAL_ALTERNATING" />
                     </Timeline> */}
-                    <div style={{width: '500px', height: '950px'}}>
-                        <Chrono mode='VERTICAL_ALTERNATING' items={items} />
+                    <div style={{width: '800px', height: '950px'}}>
+                        <Chrono mode='HORIZONTAL' items={TimelineData} slideShow={true} onRestartSlideshow={true} slideItemDuration={4500}/>
                     </div>
                 </TimelineLayer>
             </ProfileWrapper>
@@ -88,7 +89,7 @@ const ProfileSection = ({factsData}) => {
 }
 
 const items = [{
-    title: 'Hello',
+    title: `Hello`,
     cardTitle: 'hmmm',
     cardSubtitle: 'yeahhmm'
 }];
