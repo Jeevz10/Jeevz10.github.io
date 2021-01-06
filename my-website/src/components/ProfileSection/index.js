@@ -14,15 +14,11 @@ import {
     AboutMeCol,
     AboutMeHeader,
     AboutMePara,
-    TimelineLayer,
-    TimelineHeader,
-    Timeline,
-    TimelinePara
 } from './ProfileElements';
 
 import image from '../../images/jeevan_passport.jpg';
-import { Chrono } from 'react-chrono';
 import { TimelineData } from '../../data/ProfileSection/TimelineData';
+import Timeline from './TimelineSection/Timeline';
 
 const ProfileSection = ({factsData}) => {
     return (
@@ -66,32 +62,11 @@ const ProfileSection = ({factsData}) => {
                         </AboutMePara>
                     </AboutMeCol>
                 </AboutMeLayer>
-                <TimelineLayer>
-                    <TimelineHeader>
-                        Timeline
-                    </TimelineHeader>
-
-                    <TimelinePara>
-                        I believe each person has their own story to tell. Why not show you mine?
-                    </TimelinePara>
-
-                    {/* <Timeline>
-                    <Chrono mode="VERTICAL_ALTERNATING" />
-                    </Timeline> */}
-                    <div style={{width: '800px', height: '950px'}}>
-                        <Chrono mode='HORIZONTAL' items={TimelineData} slideShow={true} onRestartSlideshow={true} slideItemDuration={4500}/>
-                    </div>
-                </TimelineLayer>
+                <Timeline data={TimelineData} />
             </ProfileWrapper>
         </ProfileContainer>
         </>
     )
 }
-
-const items = [{
-    title: `Hello`,
-    cardTitle: 'hmmm',
-    cardSubtitle: 'yeahhmm'
-}];
 
 export default ProfileSection;
