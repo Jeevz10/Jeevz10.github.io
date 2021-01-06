@@ -2,15 +2,8 @@ import React from 'react';
 import {
     ProfileContainer,
     ProfileWrapper,
-    PicAndFactsLayer,
     SectionHeader,
     AboutMeLayer,
-    ImgCol,
-    Img,
-    FactsCol,
-    FactsWrapper,
-    FactsUlList,
-    FactsList,
     AboutMeCol,
     AboutMeHeader,
     AboutMePara,
@@ -19,12 +12,11 @@ import {
     Timeline,
     TimelinePara
 } from './ProfileElements';
-
-import image from '../../images/jeevan_passport.jpg';
+import PicsAndFacts from './PicsAndFacts/PicsAndFacts';
 import { Chrono } from 'react-chrono';
 import { TimelineData } from '../../data/ProfileSection/TimelineData';
 
-const ProfileSection = ({factsData}) => {
+const ProfileSection = ({factsData, img}) => {
     return (
 
         <>
@@ -33,27 +25,7 @@ const ProfileSection = ({factsData}) => {
                 <SectionHeader>
                     Profile
                 </SectionHeader>
-                <PicAndFactsLayer>
-                    
-                    <ImgCol>
-                        <Img src={image} />
-                    </ImgCol>
-
-                    <FactsCol>
-                        <FactsWrapper>
-                            {/* TODO Bold the keys */}
-                            <FactsUlList>
-                                {factsData.map((facts, index) => {
-                                    return (
-                                        <FactsList key={index}>
-                                            {facts.key} - {facts.value}
-                                        </FactsList>
-                                    )
-                                })}
-                            </FactsUlList>
-                        </FactsWrapper>
-                    </FactsCol>
-                </PicAndFactsLayer>
+                <PicsAndFacts data={factsData} img={img} />
                 <AboutMeLayer>
                     <AboutMeCol>
                         {/* TODO settle fonts size*/}
