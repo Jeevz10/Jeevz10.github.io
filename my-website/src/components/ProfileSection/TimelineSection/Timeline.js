@@ -12,10 +12,10 @@ const Timeline = ({ data }) => {
         <TimelineLayer>
             <HeaderColumn>
                 <TimelineHeader>
-
+                    Timeline
                 </TimelineHeader>
                 <TimelinePara>
-
+                    I believe each has their own story to tell. Why not show you mine?
                 </TimelinePara>
             </HeaderColumn>
             <TimelineColumn>
