@@ -30,13 +30,15 @@ export const PicAndFactsLayer = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+    text-align: center;
 `;
 
 export const ImgCol = styled.div`
     position: relative;
+    /* left: 10%; */
     object-fit: cover;
     height: 300px;
-    width: 400px;
+    width: 300px;
     text-align: center;
 `;
 
