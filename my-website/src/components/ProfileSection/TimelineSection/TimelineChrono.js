@@ -4,7 +4,7 @@ import {  TimelineLayer,
     TimelineColumn,
     TimelineDiv,
     HeaderColumn,
-    TimelinePara } from '../TimelineSection/TimelineElements';
+    TimelinePara } from './TimelineChronoElements';
 import { Chrono } from 'react-chrono';
 
 const Timeline = ({ data }) => {
@@ -23,9 +23,10 @@ const Timeline = ({ data }) => {
                     <Chrono 
                     mode='VERTICAL_ALTERNATING' 
                     items={data} 
-                    slideShow={true} 
-                    onRestartSlideshow={true} 
-                    slideItemDuration={4500} />
+                    // slideShow={true} 
+                    // onRestartSlideshow={true} 
+                    // slideItemDuration={4500} 
+                    />
                 </TimelineDiv>
             </TimelineColumn>
         </TimelineLayer>
