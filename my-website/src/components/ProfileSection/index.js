@@ -3,13 +3,8 @@ import {
     ProfileContainer,
     ProfileWrapper,
     SectionHeader,
-    TimelineLayer,
-    TimelineHeader,
-    Timeline,
-    TimelinePara
 } from './ProfileElements';
 import PicsAndFacts from './PicsAndFacts/PicsAndFacts';
-import { Chrono } from 'react-chrono';
 import { TimelineData } from '../../data/ProfileSection/TimelineData';
 import Timeline from './TimelineSection/Timeline';
 import AboutMe from './AboutMe/AboutMe';
