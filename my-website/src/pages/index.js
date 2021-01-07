@@ -5,6 +5,7 @@ import NavBar from '../components/Navbar';
 import CoverSection from '../components/CoverSection';
 import InfoSection from '../components/InfoSection';
 import ProfileSection from '../components/ProfileSection';
+import passportPhoto from '../images/jeevan_passport.jpg';
 
 
 const Home = () => {
@@ -20,7 +21,7 @@ const Home = () => {
             <NavBar headers={Routes} toggle={toggle}/>
             <CoverSection coverSectionData={CoverSectionData}/>
             {/* <InfoSection {...homeObjOne} /> */}
-            <ProfileSection factsData={ProfileFactsData}/>
+            <ProfileSection factsData={ProfileFactsData} img={passportPhoto}/>
         </>
     )
 }
