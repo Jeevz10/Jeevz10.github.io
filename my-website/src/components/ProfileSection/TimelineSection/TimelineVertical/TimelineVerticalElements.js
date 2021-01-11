@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const TimelineSection = styled.div`
-    height: 500px;
+    height: 800px;
     width: 600px;
+    margin: auto;
 `;
