@@ -1,7 +1,8 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import {
-    TimelineSection
+    TimelineSection,
+    ArmyElement,
 } from './TimelineVerticalElements';
 import 'react-vertical-timeline-component/style.min.css';
 import { HiBriefcase } from 'react-icons/hi';
@@ -9,36 +10,52 @@ import { GiPistolGun } from 'react-icons/gi';
 import { BsBook } from 'react-icons/bs';
 
 const TimelineVertical = ({ timelineData }) => {
+
     return (
         <TimelineSection>
-            <VerticalTimeline>
+            <VerticalTimeline >
                 <VerticalTimelineElement 
-                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                contentStyle={{ background: '#336600', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                date="2011 - present"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                icon={<GiPistolGun />}>
-                    <h3> hamnam </h3>
+                date="Mar 2015 - Mar 2017"
+                iconStyle={{ background: '#336600', color: '#fff' }}
+                icon={<GiPistolGun />}
+                style={{background: 'black'}}>
+                    <h3> Singapore Armed Forces </h3>
+                    <h4> First Lieutanant </h4>
                     <p> something something </p>
                 </VerticalTimelineElement>
+
                 <VerticalTimelineElement 
-                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                contentStyle={{ background: '#003399', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                date="2011 - present"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                date="Aug 2017 - Present"
+                iconStyle={{ background: '#003399', color: '#fff' }}
                 icon={<BsBook />}>
-                    <h3> hamnam </h3>
-                    <p> something something </p>
+                    <h3> National University of Singapore  </h3>
+                    <h4> Bachelor of Engineering (Computer Engineering) </h4>
                 </VerticalTimelineElement>
+
                 <VerticalTimelineElement 
-                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                contentStyle={{ background: '#660000', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                 date="2011 - present"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                iconStyle={{ background: '#660000', color: '#fff' }}
                 icon={<HiBriefcase />}>
                     <h3> hamnam </h3>
                     <p> something something </p>
                 </VerticalTimelineElement>
+
+                <VerticalTimelineElement 
+                contentStyle={{ background: '#ac7339', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                date="May 2021"
+                iconStyle={{ background: '#ac7339', color: '#fff' }}
+                icon={<HiBriefcase />}>
+                    <h3> hamnam </h3>
+                    <p> something something </p>
+                </VerticalTimelineElement>
+
             </VerticalTimeline>
         </TimelineSection>
     )
