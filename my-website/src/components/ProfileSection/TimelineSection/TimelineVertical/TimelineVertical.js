@@ -8,15 +8,16 @@ import 'react-vertical-timeline-component/style.min.css';
 import { HiBriefcase } from 'react-icons/hi';
 import { GiPistolGun } from 'react-icons/gi';
 import { BsBook } from 'react-icons/bs';
+import './TimelineVertical.css';
 
 const TimelineVertical = ({ timelineData }) => {
 
     return (
         <TimelineSection>
-            <VerticalTimeline >
+            <VerticalTimeline className='vertical-time' >
                 <VerticalTimelineElement 
                 contentStyle={{ background: '#336600', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                contentArrowStyle={{ borderRight: '7px solid  #336600' }}
                 date="Mar 2015 - Mar 2017"
                 iconStyle={{ background: '#336600', color: '#fff' }}
                 icon={<GiPistolGun />}
@@ -28,7 +29,7 @@ const TimelineVertical = ({ timelineData }) => {
 
                 <VerticalTimelineElement 
                 contentStyle={{ background: '#003399', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                contentArrowStyle={{ borderRight: '7px solid  #003399' }}
                 date="Aug 2017 - Present"
                 iconStyle={{ background: '#003399', color: '#fff' }}
                 icon={<BsBook />}>
@@ -38,7 +39,7 @@ const TimelineVertical = ({ timelineData }) => {
 
                 <VerticalTimelineElement 
                 contentStyle={{ background: '#660000', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                contentArrowStyle={{ borderRight: '7px solid  #660000' }}
                 date="2011 - present"
                 iconStyle={{ background: '#660000', color: '#fff' }}
                 icon={<HiBriefcase />}>
@@ -48,7 +49,7 @@ const TimelineVertical = ({ timelineData }) => {
 
                 <VerticalTimelineElement 
                 contentStyle={{ background: '#ac7339', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                contentArrowStyle={{ borderRight: '7px solid  #ac7339' }}
                 date="May 2021"
                 iconStyle={{ background: '#ac7339', color: '#fff' }}
                 icon={<HiBriefcase />}>
