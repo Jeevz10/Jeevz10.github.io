@@ -2,13 +2,15 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import {
     TimelineSection,
-    ArmyElement,
+    ArrowDown,
 } from './TimelineVerticalElements';
 import 'react-vertical-timeline-component/style.min.css';
 import { HiBriefcase } from 'react-icons/hi';
 import { GiPistolGun } from 'react-icons/gi';
 import { BsBook } from 'react-icons/bs';
 import './TimelineVertical.css';
+import { Button } from '../../Button';
+
 
 const TimelineVertical = ({ data }) => {
 
@@ -26,6 +28,8 @@ const TimelineVertical = ({ data }) => {
                     <h3> {data.army.title}</h3>
                     <h4>  {data.army.subTitle} </h4>
                     <p>  {data.army.content}</p>
+                    <Button> Check it out! {<ArrowDown />} </Button>
+                    
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement 
@@ -38,6 +42,7 @@ const TimelineVertical = ({ data }) => {
                     <h3> {data.nus.title}</h3>
                     <h4>  {data.nus.subTitle} </h4>
                     <p>  {data.nus.content}</p>
+                    <Button> Check it out! {<ArrowDown />} </Button>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement 
@@ -50,6 +55,7 @@ const TimelineVertical = ({ data }) => {
                     <h3> {data.alloy.title}</h3>
                     <h4>  {data.alloy.subTitle} </h4>
                     <p>  {data.alloy.content}</p>
+                    <Button> Check it out! {<ArrowDown />} </Button>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement 
@@ -61,6 +67,7 @@ const TimelineVertical = ({ data }) => {
                 icon={<HiBriefcase />}>
                     <h3> {data.next.title}</h3>
                     <h4>  {data.next.subTitle} </h4>
+                    <Button> Check it out! {<ArrowDown />} </Button>
                 </VerticalTimelineElement>
 
             </VerticalTimeline>

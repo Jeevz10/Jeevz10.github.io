@@ -52,21 +52,25 @@ export const TimelineData = {
         title: `Singapore Armed Forces`,
         subTitle: `First Lieutanant`,
         content: `Enlisted into Singapore's 2 Year Mandatory National Service for all Singaporean Males aged 18`,
+        buttonContent: 'Check out my experinces in the army!'
     },
     nus: {
         title: `National University of Singapore (NUS)`,
         subTitle: `Bachelor of Engineering (Computer Engineering)`,
         content: `Back in 2015, upon receiving my results, I began applying for universities. I had a simple question - How do computers work? 
         I recognised the trend towards technology. I decided to immerse myself in the world of software and hardware.`,
+        buttonContent: 'Check out what I had learnt in school!'
     },
     alloy: {
         title: `Alloy`,
         cardTitle: `Backend Engineer Intern`,
         cardSubtitle: `Alloy was a Fintech SaaS startup that focused on providing Know-Your-Customer / Anti-Money Laundering APIs.`,
+        buttonContent: 'Check out my experience in NYC and Alloy!'
     },
     next: {
         title: 'Graduating from NUS',
-        subTitle: 'My plan for the future is...'
+        subTitle: 'My plan for the future is...',
+        buttonContent: 'Find out what my future plans are!'
     }
     
 }
