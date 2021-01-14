@@ -19,9 +19,10 @@ const TimelineVertical = ({ timelineData }) => {
                 contentStyle={{ background: '#336600', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  #336600' }}
                 date="Mar 2015 - Mar 2017"
+                dateClassName='date'
                 iconStyle={{ background: '#336600', color: '#fff' }}
                 icon={<GiPistolGun />}
-                style={{background: 'black'}}>
+                >
                     <h3> Singapore Armed Forces </h3>
                     <h4> First Lieutanant </h4>
                     <p> something something </p>
@@ -31,6 +32,7 @@ const TimelineVertical = ({ timelineData }) => {
                 contentStyle={{ background: '#003399', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  #003399' }}
                 date="Aug 2017 - Present"
+                dateClassName='date'
                 iconStyle={{ background: '#003399', color: '#fff' }}
                 icon={<BsBook />}>
                     <h3> National University of Singapore  </h3>
@@ -40,7 +42,8 @@ const TimelineVertical = ({ timelineData }) => {
                 <VerticalTimelineElement 
                 contentStyle={{ background: '#660000', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  #660000' }}
-                date="2011 - present"
+                date="2011 - Present"
+                dateClassName='date'
                 iconStyle={{ background: '#660000', color: '#fff' }}
                 icon={<HiBriefcase />}>
                     <h3> hamnam </h3>
@@ -51,6 +54,7 @@ const TimelineVertical = ({ timelineData }) => {
                 contentStyle={{ background: '#ac7339', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  #ac7339' }}
                 date="May 2021"
+                dateClassName='date'
                 iconStyle={{ background: '#ac7339', color: '#fff' }}
                 icon={<HiBriefcase />}>
                     <h3> hamnam </h3>
