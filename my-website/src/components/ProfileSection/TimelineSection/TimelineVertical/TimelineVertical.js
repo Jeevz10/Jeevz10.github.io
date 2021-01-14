@@ -10,7 +10,7 @@ import { GiPistolGun } from 'react-icons/gi';
 import { BsBook } from 'react-icons/bs';
 import './TimelineVertical.css';
 
-const TimelineVertical = ({ timelineData }) => {
+const TimelineVertical = ({ data }) => {
 
     return (
         <TimelineSection>
@@ -23,9 +23,9 @@ const TimelineVertical = ({ timelineData }) => {
                 iconStyle={{ background: '#336600', color: '#fff' }}
                 icon={<GiPistolGun />}
                 >
-                    <h3> Singapore Armed Forces </h3>
-                    <h4> First Lieutanant </h4>
-                    <p> something something </p>
+                    <h3> {data.army.title}</h3>
+                    <h4>  {data.army.subTitle} </h4>
+                    <p>  {data.army.content}</p>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement 
@@ -35,8 +35,9 @@ const TimelineVertical = ({ timelineData }) => {
                 dateClassName='date'
                 iconStyle={{ background: '#003399', color: '#fff' }}
                 icon={<BsBook />}>
-                    <h3> National University of Singapore  </h3>
-                    <h4> Bachelor of Engineering (Computer Engineering) </h4>
+                    <h3> {data.nus.title}</h3>
+                    <h4>  {data.nus.subTitle} </h4>
+                    <p>  {data.nus.content}</p>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement 
@@ -46,8 +47,9 @@ const TimelineVertical = ({ timelineData }) => {
                 dateClassName='date'
                 iconStyle={{ background: '#660000', color: '#fff' }}
                 icon={<HiBriefcase />}>
-                    <h3> hamnam </h3>
-                    <p> something something </p>
+                    <h3> {data.alloy.title}</h3>
+                    <h4>  {data.alloy.subTitle} </h4>
+                    <p>  {data.alloy.content}</p>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement 
@@ -57,8 +59,8 @@ const TimelineVertical = ({ timelineData }) => {
                 dateClassName='date'
                 iconStyle={{ background: '#ac7339', color: '#fff' }}
                 icon={<HiBriefcase />}>
-                    <h3> hamnam </h3>
-                    <p> something something </p>
+                    <h3> {data.next.title}</h3>
+                    <h4>  {data.next.subTitle} </h4>
                 </VerticalTimelineElement>
 
             </VerticalTimeline>
