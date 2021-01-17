@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const TimelineDiv = styled.div`
     margin: auto;
     height: 1300px;
-    width: 800px;
+    width: 1200px;
+    text-align: center;
 `;
 
 export const TimelineHeader = styled.h2`
