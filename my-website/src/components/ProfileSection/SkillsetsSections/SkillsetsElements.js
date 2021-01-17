@@ -16,17 +16,19 @@ export const SkillsetContent = styled.div`
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center;
-    align-items: flex-start; */
+    justify-content: space-between;
+    align-items: flex-start;
 `
 export const LeftCol = styled.div`
     padding-top: 15px;
     width: 500px;
     height: 100%;
+    background: #f2f2f2;
 `;
 
 export const RightCol = styled.div`
     padding-top: 15px;
     width: 500px;
     height: 100%;
+    background: #f2f2f2
 `;
