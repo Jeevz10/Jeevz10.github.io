@@ -75,4 +75,4 @@ const TimelineVertical = ({ data }) => {
     )
 }
 
-export default TimelineVertical
+export default TimelineVertical;
