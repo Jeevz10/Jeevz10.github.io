@@ -6,7 +6,7 @@ import {
 } from './ProfileElements';
 import PicsAndFacts from './PicsAndFacts/PicsAndFacts';
 import { TimelineData } from '../../data/ProfileSection/TimelineData';
-import Timeline from './TimelineSection/Timeline';
+import Timeline from './TimelineSection/index';
 import AboutMe from './AboutMe/AboutMe';
 
 const ProfileSection = ({factsData, img}) => {
@@ -20,7 +20,8 @@ const ProfileSection = ({factsData, img}) => {
                 </SectionHeader>
                 <PicsAndFacts data={factsData} img={img} />
                 <AboutMe/>
-                <Timeline data={TimelineData} />
+                {/* <TimelineChrono data={TimelineData} /> */}
+                <Timeline data={TimelineData}/>
             </ProfileWrapper>
         </ProfileContainer>
         </>
