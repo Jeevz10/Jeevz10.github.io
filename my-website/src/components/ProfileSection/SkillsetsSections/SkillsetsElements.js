@@ -15,6 +15,9 @@ export const SkillsetContent = styled.div`
     height: 350px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: flex-start; */
 `
 export const LeftCol = styled.div`
 

@@ -5,8 +5,9 @@ import { SkillsetSection,
     LeftCol,
     RightCol }
     from './SkillsetsElements';
+import { SkillBars } from 'react-skills';
 
-const Skillsets = () => {
+const Skillsets = ({ data }) => {
     return (
         <SkillsetSection>
             <SkillsetHeader> 
@@ -15,10 +16,9 @@ const Skillsets = () => {
 
             <SkillsetContent>
                 <LeftCol>
-
+                    <SkillBars skills={data} />
                 </LeftCol>
                 <RightCol>
-
                 </RightCol>
             </SkillsetContent>
             
@@ -26,4 +26,4 @@ const Skillsets = () => {
     )
 }
 
-export default Skillsets
+export default Skillsets;
