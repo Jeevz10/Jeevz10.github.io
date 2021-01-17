@@ -7,6 +7,7 @@ export const TimelineSection = styled.div`
     width: 1200px;
     margin: auto;
     background: #f2f2f2;
+    text-align: left;
 `;
 
 export const ArrowDown = styled(AiOutlineArrowDown)`
