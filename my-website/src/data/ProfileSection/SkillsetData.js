@@ -43,5 +43,35 @@ export const SkillsetData = [
         name: 'NodeJS',
         level: 65,
         color: '#993d00',
+    },
+    {
+        name: 'PostgresSQL',
+        level: 65,
+        color: '#356600'
+    },
+    {
+        name: 'Scikit-learn',
+        level: 65,
+        color: '#995c00',
+    },
+    {
+        name: 'Hadoop',
+        level: 65,
+        color: '#006644',
+    },
+    {
+        name: 'Spark',
+        level: 65,
+        color: '#993d00',
+    },
+    {
+        name: 'AWS',
+        level: 35,
+        color: '#993d00',
+    },
+    {
+        name: 'Microsoft Azure',
+        level: 20,
+        color: '#993d00',
     }
 ]
