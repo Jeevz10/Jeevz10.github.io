@@ -9,7 +9,7 @@ import { TimelineData } from '../../data/ProfileSection/TimelineData';
 import Timeline from './TimelineSection/index';
 import AboutMe from './AboutMe/AboutMe';
 import Skillsets from './SkillsetsSections/Skillsets';
-import { SkillsetData } from '../../data/ProfileSection/SkillsetData';
+import { LeftData, RightData } from '../../data/ProfileSection/SkillsetData';
 
 const ProfileSection = ({factsData, img}) => {
     return (
@@ -22,7 +22,7 @@ const ProfileSection = ({factsData, img}) => {
                 </SectionHeader>
                 <PicsAndFacts data={factsData} img={img} />
                 <AboutMe/>
-                <Skillsets data={SkillsetData} />
+                <Skillsets LeftData={LeftData} RightData={RightData} />
                 {/* <TimelineChrono data={TimelineData} /> */}
                 <Timeline data={TimelineData}/>
             </ProfileWrapper>

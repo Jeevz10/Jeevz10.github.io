@@ -20,9 +20,13 @@ export const SkillsetContent = styled.div`
     align-items: flex-start; */
 `
 export const LeftCol = styled.div`
-
+    padding-top: 15px;
+    width: 500px;
+    height: 100%;
 `;
 
 export const RightCol = styled.div`
-
+    padding-top: 15px;
+    width: 500px;
+    height: 100%;
 `;
