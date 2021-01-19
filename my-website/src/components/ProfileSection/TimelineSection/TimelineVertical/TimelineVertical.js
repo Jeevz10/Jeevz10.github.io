@@ -11,6 +11,7 @@ import { BsBook } from 'react-icons/bs';
 import './TimelineVertical.css';
 import { Button } from '../../Button';
 
+// https://stephane-monnot.github.io/react-vertical-timeline/#/
 
 const TimelineVertical = ({ data }) => {
 
