@@ -3,12 +3,18 @@ import { SkillsetSection,
     SkillsetHeader,
     SkillsetContent, 
     LeftCol,
-    
-    RightCol }
+    Programming,
+    WebDev,
+    RightCol,
+    Cloud,
+    BigData,
+    MachineLearning }
     from './SkillsetsElements';
 import { SkillBars, SkillBar } from 'react-skills';
 
-const Skillsets = ({ LeftData, RightData }) => {
+// https://developer.aliyun.com/mirror/npm/package/react-skills
+
+const Skillsets = ({ ProgrammingData, WebDevData, CloudData, BigDataData, MachineLearningData }) => {
     return (
         <SkillsetSection>
             <SkillsetHeader> 
@@ -18,37 +24,28 @@ const Skillsets = ({ LeftData, RightData }) => {
             <SkillsetContent>
 
                 <LeftCol>
-                    {/* <Programming> 
-                        
-                    </Programming>
-                    <WebDev> 
-                        
+                    <Programming> Programming </Programming>
+                    <SkillBars skills={ProgrammingData} flat={true} />
 
-                    </WebDev>
+                    <WebDev> Web Deb </WebDev>
+                    <SkillBars skills={WebDevData} flat={true} />
 
-                    <Database>
-
-                    </Database> */}
-                    <SkillBars skills={LeftData}  />
                 </LeftCol>
                 <RightCol>
-                    {/* <MachineLearning>
+                    <MachineLearning> Machine Learning </MachineLearning>
+                    <SkillBars skills={MachineLearningData} flat={true} />
 
-                    </MachineLearning>
+                    <BigData> Big Data </BigData>
+                    <SkillBars skills={BigDataData} flat={true} />
 
-                    <BigData>
-
-                    </BigData>
-
-                    <CloudServices>
-
-                    </CloudServices> */}
-                <SkillBars skills={RightData}  />
+                    <Cloud> Cloud Services </Cloud>
+                    <SkillBars skills={CloudData} labelsWidth={110} flat={true} />
+    
                 </RightCol>
             </SkillsetContent>
             
         </SkillsetSection>
     )
 }
-
+// TODO i could alternatively map through the objects of objects 
 export default Skillsets;

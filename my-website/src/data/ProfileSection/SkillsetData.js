@@ -103,3 +103,30 @@ export const RightData = [
     Aws,
     Azure
 ]
+
+export const WebDevData = [
+    Javascript,
+    Typescript,
+    Node,
+    PostgresSQL
+]
+
+export const ProgrammingData = [
+    Java,
+    Python,
+    Scala
+]
+
+export const MachineLearningData = [
+    ScikitLearn
+]
+
+export const BigDataData = [
+    Hadoop,
+    Spark
+]
+
+export const CloudData = [
+    Aws,
+    Azure
+]
