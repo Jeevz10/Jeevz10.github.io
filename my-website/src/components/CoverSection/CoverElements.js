@@ -1,0 +1,110 @@
+import styled from 'styled-components';
+import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md';
+
+export const CoverContainer = styled.div`
+    background: #0c0c0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    height: 100vh; // TODO adjust for media size 480 and below 
+    position: relative;
+    z-index: 1;
+
+    // NOTE :before makes it darker  
+
+    :before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), linear-gradient(180deg, rgba(0,0,0,0.2) 0%);
+        z-index: 2;
+    }
+`;
+
+export const CoverBg = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+`;
+
+export const VideoBg = styled.video`
+    width: 100%;
+    height: 100%;
+    /* -o-object-fit: cover; */
+    object-fit: cover; // scale down will be bad because it stretches the video badly for small pixel size. fill and contain will leave empty spaces so its bad
+    background: #232a34;
+`;
+
+export const CoverContent = styled.div`
+    z-index: 3;
+    max-width: 1200px;
+    position: absolute;
+    left: 24px;
+    height: 25vh;
+    width: 40vw;
+    padding: 8px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
+export const CoverH1 = styled.h1`
+    color: #fff;
+    font-size: 48px;
+    font-size: 4vh;
+    text-align: center;
+    // TODO revist font-size again
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+        font-size: 4vw;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 32px;
+        font-size: 4vw;
+    }
+`;
+
+export const CoverP = styled.p`
+    margin-top: 24px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    max-width: 600px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 24px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 18px;
+    }
+`;
+
+export const CoverBtnWrapper = styled.div`
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
+export const ArrowForward = styled(MdArrowForward)`
+    margin-left: 8px;
+    font-size: 20px;
+`;
+
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+    margin-left: 8px;
+    font-size: 20px;
+`;
+
+
